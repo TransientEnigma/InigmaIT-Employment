@@ -1,0 +1,49 @@
+﻿.CentredSpace {
+    /*sets the width to 1200px same as the banner and navigation bar, 
+        then sets left/right margins to auto so it appears central*/
+    width: 1000Px;
+    margin: auto;
+    display: flex;
+    height: 800px;
+    padding: 0px;
+}
+
+.SlectLoginForm {
+    /*display items in a line, like a block, can't be superimposed, other things wrap around box*/
+    display: inline-block;
+    /*keeps contents left*/
+    width: 50%;
+    background-color: rgb(46, 53, 130);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+    padding: 30px;
+    margin: auto;
+}
+
+
+
+.SlectLoginFormButtons {
+    /*display items in a line, like a block, can't be superimposed, other things wrap around box*/
+    display: inline-block;
+    /*keeps contents left*/
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0% auto 0% 27%;
+}
+
+    .SlectLoginFormButtons input {
+        border: 3px solid grey;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 2px;
+    }
+
+

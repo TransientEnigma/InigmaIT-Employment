@@ -1,0 +1,65 @@
+﻿.CentredSpace {
+    /*sets the width to 1200px same as the banner and navigation bar, 
+        then sets left/right margins to auto so it appears central*/
+    width: 1000Px;
+    margin: auto;
+    display: flex;
+    height: 900px;
+    padding: 20px;
+}
+
+.RegistrationForm {
+    /*display items in a line, like a block, can't be superimposed, other things wrap around box*/
+    display: inline-block;
+    /*keeps contents left*/
+    width: 90%;
+    background-color: rgb(46, 53, 130);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+.RegistrationTable {
+    width:90%;
+    color: black;
+    background-color: lightgrey;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px 0px 10px 50px;
+    border: 3px solid grey;
+    border-radius: 20px;
+}
+    .RegistrationTable table {
+        margin-left: 15%;
+    }
+
+    .RegistrationTable td {
+        padding: 5px 5px 5px 15px;
+    }
+
+    .RegistrationButtons {
+        /*display items in a line, like a block, can't be superimposed, other things wrap around box*/
+        display: inline-block;
+        /*keeps contents left*/
+        width: 70%;
+        background-color: rgb(46, 53, 130);
+        color: white;
+        display: flex;
+        flex-direction: row;
+        /*giving the container rounded edges*/
+        border-radius: 20px;
+        padding: 30px;
+        margin: auto;
+    }
+
+    .RegistrationButtons input {
+        border: 3px solid grey;
+        border-radius: 20px;
+        padding: 7px;
+        margin: 2px;
+    }

@@ -1,0 +1,116 @@
+﻿body {
+    /*set a font family and alternatives if one is not supported by browser*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    /*centre the header, give it width then set left/right margins to auto*/
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.SlimLogoHeaderImage {
+    display: inline-block;
+    background-image: url("../IMAGE/SlimLogoHeader.jpg");
+    /*background-repeat:no-repeat;*/
+    width: 100%;
+    height: 150px;
+}
+
+ul {
+    margin-top: 0px;
+    list-style: none;
+    padding: 0;
+    background-color: darkblue;
+    /*enables us to put border around li*/
+    list-style-position: inside;
+    /*cemtre the ul, give it with then set left/right margins to auto*/
+    width: 1200Px;
+    margin: 0% auto;
+    padding: 0;
+    border-radius: 10px;
+}
+
+li {
+    /*display list items in a line, like a block, can't be superimposed, other things wrap around box*/
+    display: inline-block;
+    /*set the back-ground colour using RGB values*/
+    background-color: darkblue;
+    /*make the text white*/
+    color: white;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    border-right: 2px solid white;
+}
+
+    li:first-child {
+        /*overrides the first child element of ul so that it has a left-margin 15% of ul width*/
+        margin-left: 15%;
+    }
+
+    li:last-child {
+        /*getting rid of the border line of the last child element of ul*/
+        border-right: 0px;
+    }
+
+a {
+    /*get rid of the underline in the text of the hyperlink*/
+    text-decoration: none;
+    color: white;
+}
+
+    a:hover {
+        /*changes the text colour when the hyperlink is hovered over*/
+        color: orangered;
+    }
+
+.middle {
+    /*sets the width to 600px and then sets the right margin to 40% of screen, 
+        the left margin is automatically adjusted to keep it in line*/
+    width: 800Px;
+    margin-right: auto;
+    margin-left: auto;
+    /*give <p> a border and make it white so you can't see it*/
+    border: 5px solid white;
+    /*fill it/set the background colour*/
+    background-color: aliceblue;
+    /*border radius makes the edges curved*/
+    border-radius: 30px;
+    /*sets the text colour*/
+    color: darkblue;
+    /* give the text inside some padding*/
+    padding: 20px;
+}
+
+.bottom {
+    /*sets the width to 1200px same as the banner and navigation bar, 
+        then sets left/right margins to auto so it appears central*/
+    width: 1200Px;
+    margin: 0% auto;
+    /*giving it some space between elements above*/
+    border: 10px solid white;
+    /* background colour is a very light blue*/
+    background-color: aliceblue;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+    color: darkblue;
+    padding: 10px;
+    /*centres text*/
+    text-align: center;
+}
+
+.FrontpageImage {
+    /*we have to give it a width again otherwise it will not appear central to the screen*/
+    width: 900px;
+    /*without height the image will not display*/
+    height: 650px;
+    /*link to image*/
+    background-image: url("../IMAGE/FrontPageImage.png");
+    /*do not repeat the image*/
+    background-repeat: no-repeat;
+    margin: 40px auto auto auto;
+}
+
+
+

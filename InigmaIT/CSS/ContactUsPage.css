@@ -1,0 +1,52 @@
+﻿
+.BuildingImage {
+       /*we have to give it a width again otherwise it will not appear central to the screen*/
+    width: 900px;
+    /*without height the image will not display*/
+    height: 600px;
+    /*link to image*/
+    background-image: url("../IMAGE/Building.png");
+    /*do not repeat the image*/
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+.ContactInfo {
+    /*give it width so margins can be adjusted*/
+    width: 100%;
+    /*adjust margin relative to container length to align centre contents*/
+    margin: 150px auto 0px 5%;
+    /*make the contents of this container line up*/
+    display: flex;
+    flex-direction: row;
+    /*need to float the boxes to make them appear on top of image*/
+    float: left;
+    padding: 10px;
+    border: 20px;
+}
+
+    .ContactInfo div {
+        padding: 10px;
+        margin: 20px;
+        /*text colour*/
+        color: black;
+        /*make the background transparent*/
+        background: rgba(0, 0, 102, 0.1);
+        /*giving the container rounded edges*/
+        border-radius: 30px;
+    }
+    /*text colour for links*/
+    .ContactInfo a:link {
+        /*text-decoration: none;*/
+        color: rgb(0, 0, 102);
+    }
+    /*mouse over link colour*/
+    .ContactInfo a:hover {
+        /*text-decoration: none;*/
+        /*text colour*/
+        color: rgb(200, 0, 0);
+    }
+    /*text colour for links*/
+    .ContactInfo div p u {
+        font-weight: bold;
+        font-size:24px;
+    }

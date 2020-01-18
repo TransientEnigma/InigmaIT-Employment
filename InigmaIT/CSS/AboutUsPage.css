@@ -1,0 +1,69 @@
+﻿/********************************* About Us Page ***************************************************/
+.CentredContents {
+    /*sets the width to 1200px same as the banner and navigation bar, 
+        then sets left/right margins to auto so it appears central*/
+    width: 1200Px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.InsideLeft {
+    /*display items in a line, like a block, can't be superimposed, other things wrap around box*/
+    display: inline-block;
+    /*keeps contents left*/
+    width: 50%;
+    background-color: rgb(46, 53, 130);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+}
+
+    .InsideLeft img {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .InsideLeft p {
+        padding: 10px;
+        text-align: justify
+    }
+
+.InsideRight {
+    /*display list items in a line, like a block, can't be superimposed, other things wrap around box*/
+    display: inline-block;
+    /*keeps contents right*/
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: darkblue;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+    border: 1px solid rgb(118, 122, 232);
+}
+
+    .InsideRight img {
+        padding: 10px;
+        width: 400Px;
+        margin-left: 15%;
+    }
+
+    .InsideRight p {
+        padding: 10px;
+        text-align: justify
+    }
+
+.InsideTopLeft {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.InsideBottomLeft {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}

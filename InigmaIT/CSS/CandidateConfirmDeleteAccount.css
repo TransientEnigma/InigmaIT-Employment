@@ -1,0 +1,63 @@
+﻿.CentredSpace {
+    /*sets the width to 1200px same as the banner and navigation bar, 
+        then sets left/right margins to auto so it appears central*/
+    width: 1000Px;
+    margin: auto;
+    display: flex;
+    height: 800px;
+    padding: 0px;
+}
+
+.JobApplicationsForm {
+    /*display items in a line, like a block, can't be superimposed, other things wrap around box*/
+    display: inline-block;
+    /*keeps contents left*/
+    width: 50%;
+    background-color: rgb(46, 53, 130);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+    padding: 30px;
+    margin: auto;
+}
+
+.JobApplicationsTable {
+    width: 90%;
+    color: darkblue;
+    background-color: lightgrey;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+    margin: auto;
+    padding: 50px 0px 10px 50px;
+    border: 3px solid grey;
+    border-radius: 20px;
+}
+
+.JobApplicationsButtons {
+    /*display items in a line, like a block, can't be superimposed, other things wrap around box*/
+    display: inline-block;
+    /*keeps contents left*/
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /*giving the container rounded edges*/
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0% auto 0% 20%;
+}
+
+    .JobApplicationsButtons input {
+        border: 3px solid grey;
+        border-radius: 20px;
+        padding: 7px;
+        margin: 2px;
+    }
+
+.JobApplicationsList {
+    overflow-y: scroll;
+    height: 430px;
+    width: 90%;
+}
