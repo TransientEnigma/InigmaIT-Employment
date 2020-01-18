@@ -76,13 +76,13 @@ namespace InigmaITEmployment.HTML {
         protected global::System.Web.UI.WebControls.LinkButton CandidateRegistrationLoginTopLink;
         
         /// <summary>
-        /// txtCandidateRegistrationCandidateNo control.
+        /// lblCandidateRegistrationCandidateNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidateNo;
+        protected global::System.Web.UI.WebControls.Label lblCandidateRegistrationCandidateNo;
         
         /// <summary>
         /// txtCandidateRegistrationCandidateFirstName control.
@@ -173,6 +173,15 @@ namespace InigmaITEmployment.HTML {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload fileCandidateRegistrationCandidateCV;
+        
+        /// <summary>
+        /// lblCandidateRegistrationDateRegistered control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCandidateRegistrationDateRegistered;
         
         /// <summary>
         /// BtnSaveDetails control.

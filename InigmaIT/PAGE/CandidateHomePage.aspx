@@ -44,7 +44,7 @@
             <div class="RegistrationTable" >
                     <table border="0">
                         <tr><td>CandidateNo:</td><td>
-                            <asp:TextBox ID="txtCandidateHomePageCandidateNo" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
+                            <asp:Label ID="lblCandidateHomePageCandidateNo" runat="server" Height="25px" Width="300px"></asp:Label></td></tr>
                         <tr><td>First Name:</td><td>
                             <asp:TextBox ID="txtCandidateHomePageCandidateFirstName" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Last Name:</td><td>
@@ -65,6 +65,8 @@
                             <asp:TextBox ID="txtCandidateHomePageCandidateSecurityAnswer" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>CV File:</td><td>
                             <asp:FileUpload ID="fileCandidateHomePageCandidateCV" runat="server" Height="25px" Width="300px" /></td></tr>
+                        <tr><td>Date Registered:</td><td>
+                            <asp:Label ID="lblCandidateHomePageDateRegistered" runat="server" Height="25px" Width="300px"></asp:Label></td></tr>
                     </table>
             </div>
             <!-- END REGISTRATION FORM-->

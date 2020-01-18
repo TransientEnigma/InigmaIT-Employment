@@ -76,13 +76,13 @@ namespace InigmaIT.PAGE {
         protected global::System.Web.UI.WebControls.LinkButton CandidateHomePageLoginTopLink;
         
         /// <summary>
-        /// txtCandidateHomePageCandidateNo control.
+        /// lblCandidateHomePageCandidateNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCandidateHomePageCandidateNo;
+        protected global::System.Web.UI.WebControls.Label lblCandidateHomePageCandidateNo;
         
         /// <summary>
         /// txtCandidateHomePageCandidateFirstName control.
@@ -173,6 +173,15 @@ namespace InigmaIT.PAGE {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload fileCandidateHomePageCandidateCV;
+        
+        /// <summary>
+        /// lblCandidateHomePageDateRegistered control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCandidateHomePageDateRegistered;
         
         /// <summary>
         /// CandidateHomePageSaveDetails control.
