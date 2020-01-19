@@ -218,7 +218,7 @@ namespace InigmaITClassLibrary
             if (candidateEmail.Length < 7) { return "Candidate Email can not have less than 7 characters"; }
 
             //candidatePhone NOT MORE THAN 200 LENGTH
-            if (candidateEmail.Length > 200) { return "Candidate Email can not have more than 200 characters"; }
+            if (candidateEmail.Length > 100) { return "Candidate Email can not have more than 100 characters"; }
 
 
 

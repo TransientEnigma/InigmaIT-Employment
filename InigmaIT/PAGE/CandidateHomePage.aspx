@@ -50,7 +50,7 @@
                         <tr><td>Last Name:</td><td>
                             <asp:TextBox ID="txtCandidateHomePageCandidateLastName" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Address:</td><td>
-                            <asp:TextBox ID="txtCandidateHomePageCandidatePhoneNumber" runat="server" Height="100px" Rows="5" TextMode="MultiLine" Width="300px"></asp:TextBox></td></tr>
+                            <asp:TextBox ID="txtCandidateHomePageCandidateAddress" runat="server" Height="100px" Rows="5" TextMode="MultiLine" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Date of Birth:</td><td>
                             <asp:TextBox ID="txtCandidateHomePageCandidateBirthDate" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Phone:</td><td>

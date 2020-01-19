@@ -103,13 +103,13 @@ namespace InigmaIT.PAGE {
         protected global::System.Web.UI.WebControls.TextBox txtCandidateHomePageCandidateLastName;
         
         /// <summary>
-        /// txtCandidateHomePageCandidatePhoneNumber control.
+        /// txtCandidateHomePageCandidateAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCandidateHomePageCandidatePhoneNumber;
+        protected global::System.Web.UI.WebControls.TextBox txtCandidateHomePageCandidateAddress;
         
         /// <summary>
         /// txtCandidateHomePageCandidateBirthDate control.

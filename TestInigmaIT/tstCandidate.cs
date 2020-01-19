@@ -1759,8 +1759,8 @@ namespace TestInigmaIT
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
 
-            //candidateEmail max + 1 (200 = 192 characters + 8 characters)
-            candidateEmail = candidateLastName.PadRight(192, 'a');
+            //candidateEmail max + 1 (99 = 91 characters + 8 characters)
+            candidateEmail = candidateLastName.PadRight(91, 'a');
             candidateEmail += "@abc.com";
 
             //assign test data for validation
@@ -1786,8 +1786,8 @@ namespace TestInigmaIT
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
 
-            //candidateEmail max + 1 (200 = 192 characters + 8 characters)
-            candidateEmail = candidateLastName.PadRight(192, 'a');
+            //candidateEmail max (100 = 92 characters + 8 characters)
+            candidateEmail = candidateLastName.PadRight(92, 'a');
             candidateEmail += "@abc.com";
 
             //assign test data for validation
@@ -1813,7 +1813,7 @@ namespace TestInigmaIT
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
 
-            //candidateEmail max + 1 (201 = 193 characters + 8 characters)
+            //candidateEmail max + 1 (101 = 93 characters + 8 characters)
             candidateEmail = candidateLastName.PadRight(193, 'a');
             candidateEmail += "@abc.com";
 
