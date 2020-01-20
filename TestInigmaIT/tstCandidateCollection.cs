@@ -25,43 +25,91 @@ namespace TestInigmaIT
             clsCandidateCollection aCandidateCollection = new clsCandidateCollection();
 
             //create some test data
-            Int32 aCount = 12;
+            Int32 aCount = 0;
 
             //assign the data
-            aCandidateCollection.Count = aCount;
+            aCandidateCollection.CandidateCount = aCount;
 
             //test they are equal
-            Assert.AreEqual(aCandidateCollection.Count, aCount);
+            Assert.AreEqual(aCandidateCollection.CandidateCount, aCount);
 
 
         }
 
         [TestMethod]
-        public void ListOfCandidatesOK()
+        public void CandidateListOK()
         {
-            //create an instance of the class
+            //create an instance of the collection class
             clsCandidateCollection aCandidateCollection = new clsCandidateCollection();
 
-            //create some test data, in this case the data is a list of objects
-            List<clsCandidate> list = new List<clsCandidate>();
+            //create some test list
+            List<clsCandidate> testCandidateList = new List<clsCandidate>();
 
-            //create some test data to go in the list
+            //create a test candidate to go in the list
+            clsCandidate testCandidate = new clsCandidate();
 
-            ////create test data for following validation tests
-            //string candidateNo = "2430705";
-            //string candidateTitle = "Mr";
-            //string candidateFirstName = "Janzeb";
-            //string candidateLastName = "Masiano";
-            //string candidateBirthDate = "1988/01/14";
-            //string candidateAddress = "212 De Montfort University, The Gateway, Leicester";
-            //string candidatePostCode = "LE1 9BH";
-            //string candidatePhone = "07816152348";
-            //string candidateEmail = "P2430705@my365.dmu.ac.uk";
-            //string candidateUsername = "JMasiano1234";
-            //string candidatePassword = "An7th1n9G05";
-            //string candidateSecurityAnswer = "Is a secrete 69";
-            //string candidateDateRegistered = "2020/01/14";
+            //add test candidate data
+            testCandidate.CandidateNo = "2430705";
+            testCandidate.CandidateTitle = "Mr";
+            testCandidate.CandidateFirstName = "Janzeb";
+            testCandidate.CandidateLastName = "Masiano";
+            testCandidate.CandidateBirthDate = "1988/01/14";
+            testCandidate.CandidateAddress = "212 De Montfort University, The Gateway, Leicester";
+            testCandidate.CandidatePostCode = "LE1 9BH";
+            testCandidate.CandidatePhone = "07816152348";
+            testCandidate.CandidateEmail = "P2430705@my365.dmu.ac.uk";
+            testCandidate.CandidateUsername = "JMasiano1234";
+            testCandidate.CandidatePassword = "An7th1n9G05";
+            testCandidate.CandidateSecurityAnswer = "Is a secrete 1";
+            testCandidate.CandidateDateRegistered = "2020/01/14";
+
+            //add the test candidate to the test list
+            testCandidateList.Add(testCandidate);
+
+            //assign the data the the property
+            aCandidateCollection.CandidateList = testCandidateList;
+
+            //check they are  equal
+            Assert.AreEqual(aCandidateCollection.CandidateList, testCandidateList);
+
+
         }
 
+        [TestMethod]
+        public void CountMatchesCandidateListOK()
+        {
+            //create an instance of the collection class
+            clsCandidateCollection aCandidateCollection = new clsCandidateCollection();
+
+            //create some test list
+            List<clsCandidate> testCandidateList = new List<clsCandidate>();
+
+            //create a test candidate to go in the list
+            clsCandidate testCandidate = new clsCandidate();
+
+            //add test candidate data
+            testCandidate.CandidateNo = "2430705";
+            testCandidate.CandidateTitle = "Mr";
+            testCandidate.CandidateFirstName = "Janzeb";
+            testCandidate.CandidateLastName = "Masiano";
+            testCandidate.CandidateBirthDate = "1988/01/14";
+            testCandidate.CandidateAddress = "212 De Montfort University, The Gateway, Leicester";
+            testCandidate.CandidatePostCode = "LE1 9BH";
+            testCandidate.CandidatePhone = "07816152348";
+            testCandidate.CandidateEmail = "P2430705@my365.dmu.ac.uk";
+            testCandidate.CandidateUsername = "JMasiano1234";
+            testCandidate.CandidatePassword = "An7th1n9G05";
+            testCandidate.CandidateSecurityAnswer = "Is a secrete 1";
+            testCandidate.CandidateDateRegistered = "2020/01/14";
+
+            //add the test candidate to the test list
+            testCandidateList.Add(testCandidate);
+
+            //assign the data the the property
+            aCandidateCollection.CandidateList = testCandidateList;
+
+            //test to see that the  CandidateCount (property of Collection class) and testList.Count (built in method that returns count) are same
+            Assert.AreEqual(aCandidateCollection.CandidateCount, testCandidateList.Count);
+        }
     }
 }

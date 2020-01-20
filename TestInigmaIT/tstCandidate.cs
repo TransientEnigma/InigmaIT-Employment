@@ -156,7 +156,7 @@ namespace TestInigmaIT
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
             //create test data
-            string answer = "yellow-blue";
+            string answer = "Is a secrete 1";
             //assign test data to property
             aCandidate.CandidateSecurityAnswer = answer;
             //check they are equal
@@ -187,7 +187,7 @@ namespace TestInigmaIT
         string candidateEmail = "P2430705@my365.dmu.ac.uk";
         string candidateUsername = "JMasiano1234";
         string candidatePassword = "An7th1n9G05";
-        string candidateSecurityAnswer = "Is a secrete 69";
+        string candidateSecurityAnswer = "Is a secrete 1";
         string candidateDateRegistered = "2020/01/14";
         //string for errors
         string error = "";
