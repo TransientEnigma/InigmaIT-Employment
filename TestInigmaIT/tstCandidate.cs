@@ -25,9 +25,9 @@ namespace TestInigmaIT
             //create test data
             string Number = "2430705";
             //assign test data to property
-            aCandidate.candidateNo= Number;
+            aCandidate.CandidateNo= Number;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateNo, Number);
+            Assert.AreEqual(aCandidate.CandidateNo, Number);
         }
         [TestMethod]
         public void CandidateTitleOK()
@@ -37,9 +37,9 @@ namespace TestInigmaIT
             //create test data
             string title = "Mr";
             //assign test data to property
-            aCandidate.candidateTitle = title;
+            aCandidate.CandidateTitle = title;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateTitle, title);
+            Assert.AreEqual(aCandidate.CandidateTitle, title);
         }
         [TestMethod]
         public void CandidateFirstNameOK()
@@ -49,9 +49,9 @@ namespace TestInigmaIT
             //create test data
             string firstName = "Janzeb";
             //assign test data to property
-            aCandidate.candidateFirstName = firstName;
+            aCandidate.CandidateFirstName = firstName;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateFirstName, firstName);
+            Assert.AreEqual(aCandidate.CandidateFirstName, firstName);
         }
         [TestMethod]
         public void CandidateLastNameOK()
@@ -61,9 +61,9 @@ namespace TestInigmaIT
             //create test data
             string lastName = "Masiano";
             //assign test data to property
-            aCandidate.candidateLastName = lastName;
+            aCandidate.CandidateLastName = lastName;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateLastName, lastName);
+            Assert.AreEqual(aCandidate.CandidateLastName, lastName);
         }
         [TestMethod]
         public void CandidateBirthDateOK()
@@ -73,9 +73,9 @@ namespace TestInigmaIT
             //create test data
             string birthday = "2020/01/14";
             //assign test data to property
-            aCandidate.candidateBirthDate = birthday;
+            aCandidate.CandidateBirthDate = birthday;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateBirthDate, birthday);
+            Assert.AreEqual(aCandidate.CandidateBirthDate, birthday);
         }
         [TestMethod]
         public void CandidateAddressOK()
@@ -85,9 +85,21 @@ namespace TestInigmaIT
             //create test data
             string address = "De Montfort University, The Gateway, Leicester, LE1 9BH";
             //assign test data to property
-            aCandidate.candidateAddress = address;
+            aCandidate.CandidateAddress = address;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateAddress, address);
+            Assert.AreEqual(aCandidate.CandidateAddress, address);
+        }
+        [TestMethod]
+        public void CandidatePostCodeOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+            //create test data
+            string postCode = "LE1 9BH";
+            //assign test data to property
+            aCandidate.CandidatePostCode = postCode;
+            //check they are equal
+            Assert.AreEqual(aCandidate.CandidatePostCode, postCode);
         }
         [TestMethod]
         public void CandidatePhoneOK()
@@ -97,9 +109,9 @@ namespace TestInigmaIT
             //create test data
             string phone = "07816152348";
             //assign test data to property
-            aCandidate.candidatePhone = phone;
+            aCandidate.CandidatePhone = phone;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidatePhone, phone);
+            Assert.AreEqual(aCandidate.CandidatePhone, phone);
         }
 
         [TestMethod]
@@ -110,9 +122,9 @@ namespace TestInigmaIT
             //create test data
             string email = "P2430705@my365.dmu.ac.uk";
             //assign test data to property
-            aCandidate.candidateEmail = email;
+            aCandidate.CandidateEmail = email;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateEmail, email);
+            Assert.AreEqual(aCandidate.CandidateEmail, email);
         }
         [TestMethod]
         public void CandidateUsernameOK()
@@ -122,9 +134,9 @@ namespace TestInigmaIT
             //create test data
             string username = "JMasiano1234";
             //assign test data to property
-            aCandidate.candidateUsername = username;
+            aCandidate.CandidateUsername = username;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateUsername, username);
+            Assert.AreEqual(aCandidate.CandidateUsername, username);
         }
         [TestMethod]
         public void CandidatePasswordOK()
@@ -134,9 +146,9 @@ namespace TestInigmaIT
             //create test data
             string password = "An7th1n9";
             //assign test data to property
-            aCandidate.candidatePassword = password;
+            aCandidate.CandidatePassword = password;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidatePassword, password);
+            Assert.AreEqual(aCandidate.CandidatePassword, password);
         }
         [TestMethod]
         public void CandidateSecurityAnswerOK()
@@ -146,9 +158,9 @@ namespace TestInigmaIT
             //create test data
             string answer = "yellow-blue";
             //assign test data to property
-            aCandidate.candidateSecurityAnswer = answer;
+            aCandidate.CandidateSecurityAnswer = answer;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateSecurityAnswer, answer);
+            Assert.AreEqual(aCandidate.CandidateSecurityAnswer, answer);
         }
         [TestMethod]
         public void CandidateDateRegisteredOK()
@@ -158,9 +170,9 @@ namespace TestInigmaIT
             //create test data
             string date = "2020/01/14";
             //assign test data to property
-            aCandidate.candidateDateRegistered = date;
+            aCandidate.CandidateDateRegistered = date;
             //check they are equal
-            Assert.AreEqual(aCandidate.candidateDateRegistered, date);
+            Assert.AreEqual(aCandidate.CandidateDateRegistered, date);
         }
         /*************************** Validation Method ***********************/
         //create test data for following validation tests
@@ -169,7 +181,8 @@ namespace TestInigmaIT
         string candidateFirstName = "Janzeb";
         string candidateLastName = "Masiano";
         string candidateBirthDate = "1988/01/14";
-        string candidateAddress = "De Montfort University, The Gateway, Leicester, LE1 9BH";
+        string candidateAddress = "212 De Montfort University, The Gateway, Leicester";
+        string candidatePostCode = "LE1 9BH";
         string candidatePhone = "07816152348";
         string candidateEmail = "P2430705@my365.dmu.ac.uk";
         string candidateUsername = "JMasiano1234";
@@ -192,6 +205,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -219,6 +233,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -245,6 +260,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -271,6 +287,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -297,6 +314,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -323,6 +341,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -349,6 +368,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -375,6 +395,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -402,6 +423,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -428,6 +450,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -454,6 +477,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -480,6 +504,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -506,6 +531,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -532,6 +558,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -558,6 +585,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -586,6 +614,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -612,6 +641,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -639,13 +669,13 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
-            //check they are not equal
             Assert.AreNotEqual(error, "");
 
         }
@@ -665,6 +695,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -691,6 +722,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -717,6 +749,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -743,6 +776,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -769,6 +803,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -792,20 +827,21 @@ namespace TestInigmaIT
             //candidateLastName not non-characters
             candidateLastName = "%><?@()$£!";
 
-            
+
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
-                                                        candidateTitle,
-                                                        candidateFirstName,
-                                                        candidateLastName,
-                                                        candidateBirthDate,
-                                                        candidateAddress,
-                                                        candidatePhone,
-                                                        candidateEmail,
-                                                        candidateUsername,
-                                                        candidatePassword,
-                                                        candidateSecurityAnswer,
-                                                        candidateDateRegistered);
+                                                    candidateTitle,
+                                                    candidateFirstName,
+                                                    candidateLastName,
+                                                    candidateBirthDate,
+                                                    candidateAddress,
+                                                    candidatePostCode,
+                                                    candidatePhone,
+                                                    candidateEmail,
+                                                    candidateUsername,
+                                                    candidatePassword,
+                                                    candidateSecurityAnswer,
+                                                    candidateDateRegistered);
             //check they are not equal
             Assert.AreNotEqual(error, "");
 
@@ -826,6 +862,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -853,6 +890,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -879,6 +917,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -905,6 +944,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -931,6 +971,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -957,6 +998,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -983,6 +1025,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1012,6 +1055,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1039,6 +1083,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1065,6 +1110,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1091,6 +1137,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1122,6 +1169,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1151,6 +1199,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1181,6 +1230,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1203,7 +1253,7 @@ namespace TestInigmaIT
 
             //candidateAddress characters, numbers, spaces, commas and forward slashes only
             candidateAddress = "%><?@()$£!";
-
+           
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
                                                     candidateTitle,
@@ -1211,6 +1261,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1237,6 +1288,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1264,6 +1316,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1290,6 +1343,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1316,6 +1370,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1342,6 +1397,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1368,6 +1424,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1394,6 +1451,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1404,6 +1462,199 @@ namespace TestInigmaIT
             Assert.AreNotEqual(error, "");
 
         }
+        /******************************* Tests for CandidatePostCode ******************************/
+
+        [TestMethod]
+        public void CandidatePostCodeUnacceptableCharactersOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+
+            //candidatePostCode characters, numbers, spaces, commas and forward slashes only
+            candidatePostCode = "%>?@$£!";
+
+            //assign test data for validation
+            error = aCandidate.CandidateValidation(candidateNo,
+                                                    candidateTitle,
+                                                    candidateFirstName,
+                                                    candidateLastName,
+                                                    candidateBirthDate,
+                                                    candidateAddress,
+                                                    candidatePostCode,
+                                                    candidatePhone,
+                                                    candidateEmail,
+                                                    candidateUsername,
+                                                    candidatePassword,
+                                                    candidateSecurityAnswer,
+                                                    candidateDateRegistered);
+            //check they are not equal
+            Assert.AreNotEqual(error, "");
+
+        }
+
+        [TestMethod]
+        public void CandidatePostCodeMinLessOneOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+
+            //candidatePostCode min - 1 (5 characters)
+            candidatePostCode = "LE19B";
+
+            //assign test data for validation
+            error = aCandidate.CandidateValidation(candidateNo,
+                                                    candidateTitle,
+                                                    candidateFirstName,
+                                                    candidateLastName,
+                                                    candidateBirthDate,
+                                                    candidateAddress,
+                                                    candidatePostCode,
+                                                    candidatePhone,
+                                                    candidateEmail,
+                                                    candidateUsername,
+                                                    candidatePassword,
+                                                    candidateSecurityAnswer,
+                                                    candidateDateRegistered);
+            //check they are not equal
+            Assert.AreNotEqual(error, "");
+
+        }
+        [TestMethod]
+        public void CandidatePostCodeMinOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+
+            //candidatePostCode min(6 characters, including space)
+            candidatePostCode = "W1 7JH";
+
+            //assign test data for validation
+            error = aCandidate.CandidateValidation(candidateNo,
+                                                    candidateTitle,
+                                                    candidateFirstName,
+                                                    candidateLastName,
+                                                    candidateBirthDate,
+                                                    candidateAddress,
+                                                    candidatePostCode,
+                                                    candidatePhone,
+                                                    candidateEmail,
+                                                    candidateUsername,
+                                                    candidatePassword,
+                                                    candidateSecurityAnswer,
+                                                    candidateDateRegistered);
+            //check they are equal
+            Assert.AreEqual(error, "");
+
+        }
+        [TestMethod]
+        public void CandidatePostCodeMinPlusOneOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+
+            //candidatePostCode min + 1 (7 characters, including space)
+            candidatePostCode = "LE2 7JH";
+
+            //assign test data for validation
+            error = aCandidate.CandidateValidation(candidateNo,
+                                                    candidateTitle,
+                                                    candidateFirstName,
+                                                    candidateLastName,
+                                                    candidateBirthDate,
+                                                    candidateAddress,
+                                                    candidatePostCode,
+                                                    candidatePhone,
+                                                    candidateEmail,
+                                                    candidateUsername,
+                                                    candidatePassword,
+                                                    candidateSecurityAnswer,
+                                                    candidateDateRegistered);
+            //check they are equal
+            Assert.AreEqual(error, "");
+
+        }
+        [TestMethod]
+        public void CandidatePostCodeMaxLessOneOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+
+            //candidatePostCode max - 1 (8 characters, including space)
+            candidatePostCode = "LE22 7JH";
+
+            //assign test data for validation
+            error = aCandidate.CandidateValidation(candidateNo,
+                                                    candidateTitle,
+                                                    candidateFirstName,
+                                                    candidateLastName,
+                                                    candidateBirthDate,
+                                                    candidateAddress,
+                                                    candidatePostCode,
+                                                    candidatePhone,
+                                                    candidateEmail,
+                                                    candidateUsername,
+                                                    candidatePassword,
+                                                    candidateSecurityAnswer,
+                                                    candidateDateRegistered);
+            //check they are equal
+            Assert.AreEqual(error, "");
+
+        }
+        [TestMethod]
+        public void CandidatePostCodeMaxOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+
+            //candidatePostCode max (9 characters, including space)
+            candidatePostCode = "LE22 77JH";
+
+            //assign test data for validation
+            error = aCandidate.CandidateValidation(candidateNo,
+                                                    candidateTitle,
+                                                    candidateFirstName,
+                                                    candidateLastName,
+                                                    candidateBirthDate,
+                                                    candidateAddress,
+                                                    candidatePostCode,
+                                                    candidatePhone,
+                                                    candidateEmail,
+                                                    candidateUsername,
+                                                    candidatePassword,
+                                                    candidateSecurityAnswer,
+                                                    candidateDateRegistered);
+            //check they are equal
+            Assert.AreEqual(error, "");
+
+        }
+        [TestMethod]
+        public void CandidatePostCodeMaxPlusOneOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+
+            //candidatePostCode max + 1 (10 characters, including space)
+            candidatePostCode = "LE22 77JHY";
+
+            //assign test data for validation
+            error = aCandidate.CandidateValidation(candidateNo,
+                                                    candidateTitle,
+                                                    candidateFirstName,
+                                                    candidateLastName,
+                                                    candidateBirthDate,
+                                                    candidateAddress,
+                                                    candidatePostCode,
+                                                    candidatePhone,
+                                                    candidateEmail,
+                                                    candidateUsername,
+                                                    candidatePassword,
+                                                    candidateSecurityAnswer,
+                                                    candidateDateRegistered);
+            //check they are not equal
+            Assert.AreNotEqual(error, "");
+
+        }
+
 
 
         /******************************* Tests for CandidatePhone ******************************/
@@ -1425,6 +1676,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1453,6 +1705,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1479,6 +1732,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1505,6 +1759,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1531,6 +1786,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1557,6 +1813,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1583,6 +1840,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1613,6 +1871,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1639,6 +1898,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1665,6 +1925,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1691,6 +1952,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1717,6 +1979,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1743,6 +2006,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1770,6 +2034,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1797,6 +2062,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1824,6 +2090,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1854,6 +2121,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1879,6 +2147,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1906,6 +2175,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1932,6 +2202,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1958,6 +2229,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -1984,6 +2256,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2010,6 +2283,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2036,6 +2310,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2066,6 +2341,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2090,6 +2366,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2117,6 +2394,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2143,6 +2421,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2169,6 +2448,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2195,6 +2475,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2221,6 +2502,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2247,6 +2529,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2279,6 +2562,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2305,6 +2589,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2332,6 +2617,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2359,6 +2645,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2385,6 +2672,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2411,6 +2699,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2437,6 +2726,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2462,6 +2752,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2492,6 +2783,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2519,6 +2811,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2545,6 +2838,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2571,6 +2865,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2601,6 +2896,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2630,6 +2926,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,
@@ -2659,6 +2956,7 @@ namespace TestInigmaIT
                                                     candidateLastName,
                                                     candidateBirthDate,
                                                     candidateAddress,
+                                                    candidatePostCode,
                                                     candidatePhone,
                                                     candidateEmail,
                                                     candidateUsername,

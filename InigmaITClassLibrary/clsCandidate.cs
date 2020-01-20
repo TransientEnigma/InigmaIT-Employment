@@ -7,18 +7,19 @@ namespace InigmaITClassLibrary
         public clsCandidate()
         {
         }
-        public string candidateNo { get; set; }
-        public string candidateTitle { get; set; }
-        public string candidateFirstName { get; set; }
-        public string candidateLastName { get; set; }
-        public string candidateBirthDate { get; set; }
-        public string candidateAddress { get; set; }
-        public string candidatePhone { get; set; }
-        public string candidateEmail { get; set; }
-        public string candidateUsername { get; set; }
-        public string candidatePassword { get; set; }
-        public string candidateSecurityAnswer { get; set; }
-        public string candidateDateRegistered { get; set; }
+        public string CandidateNo { get; set; }
+        public string CandidateTitle { get; set; }
+        public string CandidateFirstName { get; set; }
+        public string CandidateLastName { get; set; }
+        public string CandidateBirthDate { get; set; }
+        public string CandidateAddress { get; set; }
+        public string CandidatePostCode { get; set; }
+        public string CandidatePhone { get; set; }
+        public string CandidateEmail { get; set; }
+        public string CandidateUsername { get; set; }
+        public string CandidatePassword { get; set; }
+        public string CandidateSecurityAnswer { get; set; }
+        public string CandidateDateRegistered { get; set; }
 
 
         public string CandidateValidation(string candidateNo, 
@@ -26,7 +27,8 @@ namespace InigmaITClassLibrary
                                             string candidateFirstName,
                                             string candidateLastName, 
                                             string candidateBirthDate, 
-                                            string candidateAddress, 
+                                            string candidateAddress,
+                                            string candidatePostCode,
                                             string candidatePhone, 
                                             string candidateEmail,
                                             string candidateUsername,
@@ -168,8 +170,26 @@ namespace InigmaITClassLibrary
             //CandidateAddress NOT MORE THAN 200 LENGTH
             if (candidateAddress.Length > 200) { return "Candidate Address can not have more than 200 characters"; }
 
+            /******************************* Tests for CandidatePostCode ******************************/
 
-            ///******************************* Tests for CandidatePhone ******************************/
+            //traverse the characters in the CandidatePostCode
+            foreach (char character in candidatePostCode)
+            {
+                //CHECK CandidateSecurityAnswer IS ONLY CHARACTERS OR NUMBERS OR SPACE
+                if (!(((character >= 'A') && (character <= 'z')) || ((character >= '0') && (character <= '9')) || (character == ' ')))
+                {
+                    //error if contains anything else
+                    return "Candidate Post Code can only contain characters, numbers, spaces";
+                }
+            }
+
+            //candidatePostCode NOT LESS THAN 6 LENGTH (OR BLANK)
+            if (candidatePostCode.Length < 6) { return "Candidate Post Code can not have less than 6 characters"; }
+
+            //candidatePostCode NOT MORE THAN 200 LENGTH
+            if (candidatePostCode.Length > 9) { return "Candidate Post Code can not have more than 9 characters"; }
+
+            /******************************* Tests for CandidatePhone ******************************/
 
             //traverse the characters in the CandidatePhone
             foreach (char character in candidatePhone)
