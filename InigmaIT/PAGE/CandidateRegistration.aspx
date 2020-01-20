@@ -40,12 +40,16 @@
                     <table border="0">
                         <tr><td>CandidateNo:</td><td>
                             <asp:Label ID="lblCandidateRegistrationCandidateNo" runat="server" Height="25px" Width="300px"></asp:Label></td></tr>
+                        <tr><td>Title:</td><td>
+                            <asp:TextBox ID="txtCandidateRegistrationCandidateTitle" runat="server" Height="25px" Width="150px"></asp:TextBox></td></tr>
                         <tr><td>First Name:</td><td>
                             <asp:TextBox ID="txtCandidateRegistrationCandidateFirstName" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Last Name:</td><td>
                             <asp:TextBox ID="txtCandidateRegistrationCandidateLastName" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Address:</td><td>
-                            <asp:TextBox ID="txtCandidateRegistrationCandidatePhoneNumber" runat="server" Height="100px" Rows="5" TextMode="MultiLine" Width="300px"></asp:TextBox></td></tr>
+                            <asp:TextBox ID="txtCandidateRegistrationCandidateAddress" runat="server" Height="100px" Rows="5" TextMode="MultiLine" Width="300px"></asp:TextBox></td></tr>
+                        <tr><td>Post Code:</td><td>
+                            <asp:TextBox ID="txtCandidateRegistrationCandidatePostCode" runat="server" Height="25px" Width="150px"></asp:TextBox></td></tr>
                         <tr><td>Date of Birth:</td><td>
                             <asp:TextBox ID="txtCandidateRegistrationCandidateBirthDate" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Phone:</td><td>
@@ -69,6 +73,7 @@
                        <asp:Button ID="BtnSaveDetails" runat="server" Text="Save" OnClick="BtnSaveDetails_Click" Height="40px" Width="150px" />
                        <asp:Button ID="BtnClearForm" runat="server" Text="Clear" Height="40px" Width="150px" />
                     </div>
+            <asp:Label ID="lblCandidateRegistrationValidationError" runat="server" Font-Bold="True" ForeColor="Red"></asp:Label>
         </div>
         
 

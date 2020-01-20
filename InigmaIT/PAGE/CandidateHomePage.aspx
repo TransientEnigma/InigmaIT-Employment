@@ -45,12 +45,16 @@
                     <table border="0">
                         <tr><td>CandidateNo:</td><td>
                             <asp:Label ID="lblCandidateHomePageCandidateNo" runat="server" Height="25px" Width="300px"></asp:Label></td></tr>
+                        <tr><td>Title:</td><td>
+                            <asp:TextBox ID="txtCandidateeHomePageCandidateTitle" runat="server" Height="25px" Width="150px"></asp:TextBox></td></tr>
                         <tr><td>First Name:</td><td>
                             <asp:TextBox ID="txtCandidateHomePageCandidateFirstName" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Last Name:</td><td>
                             <asp:TextBox ID="txtCandidateHomePageCandidateLastName" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Address:</td><td>
                             <asp:TextBox ID="txtCandidateHomePageCandidateAddress" runat="server" Height="100px" Rows="5" TextMode="MultiLine" Width="300px"></asp:TextBox></td></tr>
+                        <tr><td>Post Code:</td><td>
+                            <asp:TextBox ID="txtCandidateRegistrationCandidatePostCode" runat="server" Height="25px" Width="150px"></asp:TextBox></td></tr>
                         <tr><td>Date of Birth:</td><td>
                             <asp:TextBox ID="txtCandidateHomePageCandidateBirthDate" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Phone:</td><td>

@@ -300,7 +300,7 @@ namespace InigmaITClassLibrary
             }
 
             //CandidatePassword NOT LESS THAN 3 LENGTH (OR BLANK)
-            if (candidateSecurityAnswer.Length < 10) { return "Candidate Security Answer can not have less than 3 characters"; }
+            if (candidateSecurityAnswer.Length < 10) { return "Candidate Security Answer can not have less than 10 characters"; }
 
             //CandidatePassword NOT MORE THAN 30 LENGTH
             if (candidateSecurityAnswer.Length > 30) { return "Candidate Security Answer can not have more than 30 characters"; }

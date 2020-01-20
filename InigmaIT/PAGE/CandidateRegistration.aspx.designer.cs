@@ -85,6 +85,15 @@ namespace InigmaITEmployment.HTML {
         protected global::System.Web.UI.WebControls.Label lblCandidateRegistrationCandidateNo;
         
         /// <summary>
+        /// txtCandidateRegistrationCandidateTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidateTitle;
+        
+        /// <summary>
         /// txtCandidateRegistrationCandidateFirstName control.
         /// </summary>
         /// <remarks>
@@ -103,13 +112,22 @@ namespace InigmaITEmployment.HTML {
         protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidateLastName;
         
         /// <summary>
-        /// txtCandidateRegistrationCandidatePhoneNumber control.
+        /// txtCandidateRegistrationCandidateAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidatePhoneNumber;
+        protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidateAddress;
+        
+        /// <summary>
+        /// txtCandidateRegistrationCandidatePostCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidatePostCode;
         
         /// <summary>
         /// txtCandidateRegistrationCandidateBirthDate control.
@@ -200,6 +218,15 @@ namespace InigmaITEmployment.HTML {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnClearForm;
+        
+        /// <summary>
+        /// lblCandidateRegistrationValidationError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCandidateRegistrationValidationError;
         
         /// <summary>
         /// CandidateRegistrationHomePageBotLink control.
