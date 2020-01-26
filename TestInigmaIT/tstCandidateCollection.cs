@@ -25,7 +25,7 @@ namespace TestInigmaIT
             clsCandidateCollection aCandidateCollection = new clsCandidateCollection();
 
             //create some test data
-            Int32 aCount = 0;
+            Int32 aCount = 2;
 
             //assign the data
             aCandidateCollection.CandidateCount = aCount;

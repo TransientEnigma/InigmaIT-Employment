@@ -17,9 +17,12 @@ namespace InigmaITEmployment.HTML
             {
                 //put todays date in the textbox for registration date
                 lblCandidateRegistrationDateRegistered.Text = Convert.ToString(DateTime.Today.Day) + "/" + Convert.ToString(DateTime.Today.Month) + "/" + Convert.ToString(DateTime.Today.Year);
-            }            
+            }  
+            
 
         }
+
+
 
         //navigation buttons
         protected void RegistrationHomePageTopLink_Click(object sender, EventArgs e)
