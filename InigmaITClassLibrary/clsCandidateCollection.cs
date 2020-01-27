@@ -5,26 +5,26 @@ namespace InigmaITClassLibrary
     public class clsCandidateCollection
     {
 
-
-        //private data member for the CandidateList
-        private List<clsCandidate> pmCandidateList = new List<clsCandidate>();
-
-
-        //public property for the count
-        public int CandidateCount
+        //private member variable for someCandidate
+        private clsCandidate pmSomeCandidate;
+        //public property used to pass in and retrieve candidate data
+        public clsCandidate someCandidate
         {
             get
             {
-                //return the count property of the private list
-                return pmCandidateList.Count;
+                //return the private member variable for someCandidate 
+                return pmSomeCandidate;
             }
             set
             {
-
+                //assign the incomming value to the private member variable
+                pmSomeCandidate = value;
             }
+
         }
 
-
+        //private data member for the CandidateList
+        private List<clsCandidate> pmCandidateList = new List<clsCandidate>();
         //public property for the CandidateList
         public List<clsCandidate> CandidateList
         {
@@ -38,6 +38,20 @@ namespace InigmaITClassLibrary
                 //assign the incomming value to the private member variable
                 pmCandidateList = value;
             }
+        }
+        //public property for the count
+        public int CandidateCount
+        {
+            get
+            {
+                //return the count property of the private list
+                return pmCandidateList.Count;
+            }
+            set
+            {
+                //need this for TDD
+            }
+
         }
 
         //public constructor for the class for TTD, code for adding 2 records

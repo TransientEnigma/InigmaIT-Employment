@@ -7,21 +7,217 @@ namespace InigmaITClassLibrary
         public clsCandidate()
         {
         }
-        public string CandidateNo { get; set; }
-        public string CandidateTitle { get; set; }
-        public string CandidateFirstName { get; set; }
-        public string CandidateLastName { get; set; }
-        public string CandidateBirthDate { get; set; }
-        public string CandidateAddress { get; set; }
-        public string CandidatePostCode { get; set; }
-        public string CandidatePhone { get; set; }
-        public string CandidateEmail { get; set; }
-        public string CandidateUsername { get; set; }
-        public string CandidatePassword { get; set; }
-        public string CandidateSecurityAnswer { get; set; }
-        public string CandidateDateRegistered { get; set; }
+        //private member variable for CandidateNo
+        private string pmCandidateNo;
+        //public property funtion to access private member
+        public string CandidateNo
+        {
+            get
+            {
+                //return the private member variable for CandidateNo
+                return pmCandidateNo;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateNo = value;
+            }
+        }
+        //private member variable for CandidateTitle
+        private string pmCandidateTitle;
+        //public property funtion
+        public string CandidateTitle
+        {
+            get
+            {
+                //return the private member variable for CandidateTitle
+                return pmCandidateTitle;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateTitle = value;
+            }
 
+        }
+        //private member variable for CandidateFirstName
+        private string pmFirstName;
+        //public property funtion
+        public string CandidateFirstName
+        {
+            get
+            {
+                //return the private member variable for CandidateFirstName
+                return pmFirstName;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmFirstName = value;
+            }
+        }
+        //private member variable for CandidateLastName
+        private string pmCandidateLastName;
+        //public property funtion
+        public string CandidateLastName
+        {
+            get
+            {
+                //return the private member variable for CandidateLastName
+                return pmCandidateLastName;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateLastName = value;
+            }
+        }
+        //private member variable for CandidateBirthDate
+        private string pmCandidateBirthDate;
+        //public property funtion
+        public string CandidateBirthDate
+        {
+            get
+            {
+                //return the private member variable for CandidateBirthDate
+                return pmCandidateBirthDate;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateBirthDate = value;
+            }
+        }
+        //private member variable for CandidateAddress
+        private string pmCandidateAddress;
+        //public property funtion
+        public string CandidateAddress
+        {
+            get
+            {
+                //return the private member variable for CandidateAddress
+                return pmCandidateAddress;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateAddress = value;
+            }
+        }
+        //private member variable for CandidatePostCode
+        private string pmCandidatePostCode;
+        //public property funtion
+        public string CandidatePostCode
+        {
+            get
+            {
+                //return the private member variable for CandidatePostCode
+                return pmCandidatePostCode;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidatePostCode = value;
+            }
+        }
+        //private member variable for CandidatePhone
+        private string pmCandidatePhone;
+        //public property funtion
+        public string CandidatePhone
+        {
+            get
+            {
+                //return the private member variable for CandidatePhone
+                return pmCandidatePhone;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidatePhone = value;
+            }
+        }
+        //private member variable for CandidateEmail
+        private string pmCandidateEmail;
+        //public property funtion
+        public string CandidateEmail
+        {
+            get
+            {
+                //return the private member variable for CandidateEmail
+                return pmCandidateEmail;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateEmail = value;
+            }
+        }
+        //private member variable for CandidateUsername
+        private string pmCandidateUsername;
+        //public property funtion
+        public string CandidateUsername
+        {
+            get
+            {
+                //return the private member variable for CandidateUsername
+                return pmCandidateUsername;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateUsername = value;
+            }
+        }
+        //private member variable for CandidatePassword
+        private string pmCandidatePassword;
+        //public property funtion
+        public string CandidatePassword
+        {
+            get
+            {
+                //return the private member variable for CandidatePassword
+                return pmCandidatePassword;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidatePassword = value;
+            }
+        }
+        //private member variable for CandidateSecurityAnswer
+        private string pmCandidateSecurityAnswer;
+        //public property funtion
+        public string CandidateSecurityAnswer
+        {
+            get
+            {
+                //return the private member variable for CandidateSecurityAnswer
+                return pmCandidateSecurityAnswer;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateSecurityAnswer = value;
+            }
+        }
+        //private member variable for CandidateDateRegistered
+        private string pmCandidateDateRegistered;
+        //public property funtion
+        public string CandidateDateRegistered
+        {
+            get
+            {
+                //return the private member variable for CandidateDateRegistered
+                return pmCandidateDateRegistered;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateDateRegistered = value;
+            }
+        }
 
+        /************************* Candidate Details Validation Function *************************/
         public string CandidateValidation(string candidateNo, 
                                             string candidateTitle, 
                                             string candidateFirstName,

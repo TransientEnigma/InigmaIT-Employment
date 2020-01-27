@@ -67,10 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\InigmaIT.mdf" />
-    <Content Include="App_Data\InigmaIT_log.ldf">
-      <DependentUpon>InigmaIT.mdf</DependentUpon>
-    </Content>
     <Content Include="CSS\AboutUsPage.css" />
     <Content Include="CSS\CandidateHomePage.css" />
     <Content Include="CSS\CandidateConfirmDeleteAccount.css" />
@@ -232,6 +228,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="IMAGE\" />
   </ItemGroup>
   <ItemGroup>

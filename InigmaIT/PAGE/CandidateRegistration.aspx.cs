@@ -95,8 +95,7 @@ namespace InigmaITEmployment.HTML
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
 
-            //assign the data to the validation method
-
+            //assign the data to the validation method. We have no candidateNo for new candidates so just use "1"
             validationError = aCandidate.CandidateValidation("1", 
                                                     txtCandidateRegistrationCandidateTitle.Text, 
                                                     txtCandidateRegistrationCandidateFirstName.Text, 
@@ -110,13 +109,36 @@ namespace InigmaITEmployment.HTML
                                                     txtCandidateRegistrationCandidatePassword.Text, 
                                                     txtCandidateRegistrationCandidateSecurityAnswer.Text, 
                                                     lblCandidateRegistrationDateRegistered.Text);
-
+            //if there are no validation errors
             if(validationError == "")
             {
+                //register a new candidate (i.e. add the candidate to database)
                 Response.Redirect("CandidateSaveConfirmation.aspx");
+                //create an instance of clsCandidateCollection
+                //clsCandidateCollection newCandidate = new clsCandidateCollection
+                //pass in the data of someCandidate in the newCandidate object
+                //newCandidate.someCandidate.Title = txtCandidateRegistrationCandidateTitle.Text;
+                //newCandidate.someCandidate.CandidateFirstName = txtCandidateRegistrationCandidateFirstName.Text, 
+                //newCandidate.someCandidate.CandidateLastName = txtCandidateRegistrationCandidateLastName.Text, 
+                //newCandidate.someCandidate.CandidateBirthDate = txtCandidateRegistrationCandidateBirthDate.Text, 
+                //newCandidate.someCandidate.CandidateAddress = txtCandidateRegistrationCandidateAddress.Text, 
+                //newCandidate.someCandidate.CandidatePostCode = txtCandidateRegistrationCandidatePostCode.Text, 
+                //newCandidate.someCandidate.CandidatePhone = txtCandidateRegistrationCandidatePhone.Text, 
+                //newCandidate.someCandidate.CandidateEmail = txtCandidateRegistrationCandidateEmail.Text, 
+                //newCandidate.someCandidate.CandidateUserName = txtCandidateRegistrationCandidateUserName.Text, 
+                //newCandidate.someCandidate.CandidatePassword = txtCandidateRegistrationCandidatePassword.Text, 
+                //newCandidate.someCandidate.CandidateSecurityAnswer = txtCandidateRegistrationCandidateSecurityAnswer.Text, 
+                //newCandidate.someCandidate.CandidateDateRegistered = lblCandidateRegistrationDateRegistered.Text
+
+                //execute the AddCandidate method, to add a new candidate to database
+                //newCandidate.AddCandidate();
+
+
             }
-            if(validationError != "")
+            //if there is a validation error
+            if (validationError != "")
             {
+                //display validation error
                 lblCandidateRegistrationValidationError.Text = validationError;
             }
 
