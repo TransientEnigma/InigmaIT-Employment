@@ -62,10 +62,12 @@
                         <tr><td>E-mail:</td><td>
                             <asp:TextBox ID="txtCandidateHomePageCandidateEmail" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Username:</td><td>
-                            <asp:TextBox ID="txtCandidateRegistrationCandidateUserName" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
+                            <asp:TextBox ID="txtCandidateRegistrationCandidateUsername" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td class="auto-style1">Password:</td><td class="auto-style1">
                             <asp:TextBox ID="txtCandidateHomePageCandidatePassword" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
-                        <tr><td>Favourite Colour:</td><td>
+                        <tr><td class="auto-style1">Confirm Password:</td><td class="auto-style1">
+                            <asp:TextBox ID="txtCandidateHomePageCandidateConfirmPassword" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
+                        <tr><td>Security Answer:</td><td>
                             <asp:TextBox ID="txtCandidateHomePageCandidateSecurityAnswer" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>CV File:</td><td>
                             <asp:FileUpload ID="fileCandidateHomePageCandidateCV" runat="server" Height="25px" Width="300px" /></td></tr>

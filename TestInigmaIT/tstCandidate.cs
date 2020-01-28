@@ -23,9 +23,9 @@ namespace TestInigmaIT
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
             //create test data
-            string Number = "2430705";
+            Int32 Number = 2430705;
             //assign test data to property
-            aCandidate.CandidateNo= Number;
+            aCandidate.CandidateNo = Number;
             //check they are equal
             Assert.AreEqual(aCandidate.CandidateNo, Number);
         }
@@ -71,7 +71,7 @@ namespace TestInigmaIT
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
             //create test data
-            string birthday = "2020/01/14";
+            DateTime birthday = Convert.ToDateTime("2020/01/14");
             //assign test data to property
             aCandidate.CandidateBirthDate = birthday;
             //check they are equal
@@ -168,7 +168,7 @@ namespace TestInigmaIT
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
             //create test data
-            string date = "2020/01/14";
+            DateTime date = Convert.ToDateTime("2020/01/14");
             //assign test data to property
             aCandidate.CandidateDateRegistered = date;
             //check they are equal
@@ -187,6 +187,7 @@ namespace TestInigmaIT
         string candidateEmail = "P2430705@my365.dmu.ac.uk";
         string candidateUsername = "JMasiano1234";
         string candidatePassword = "An7th1n9G05";
+        string candidateConfirmPassword = "An7th1n9G05";
         string candidateSecurityAnswer = "Is a secrete 1";
         string candidateDateRegistered = "2020/01/14";
         //string for errors
@@ -210,6 +211,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -238,6 +240,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -265,6 +268,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -292,6 +296,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -319,6 +324,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -346,6 +352,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -373,6 +380,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -400,6 +408,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -428,6 +437,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -455,6 +465,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -482,6 +493,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -509,6 +521,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -536,6 +549,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -563,6 +577,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -590,6 +605,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -619,6 +635,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -646,6 +663,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -674,6 +692,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             Assert.AreNotEqual(error, "");
@@ -700,6 +719,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -727,6 +747,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -754,6 +775,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -781,6 +803,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -808,6 +831,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -840,6 +864,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -867,6 +892,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -895,6 +921,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -922,6 +949,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -949,6 +977,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -976,6 +1005,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1003,6 +1033,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1030,6 +1061,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1060,6 +1092,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1088,6 +1121,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1115,6 +1149,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1142,6 +1177,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1174,6 +1210,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1204,6 +1241,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1235,6 +1273,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1253,7 +1292,7 @@ namespace TestInigmaIT
 
             //candidateAddress characters, numbers, spaces, commas and forward slashes only
             candidateAddress = "%><?@()$£!";
-           
+
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
                                                     candidateTitle,
@@ -1266,6 +1305,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1293,6 +1333,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1321,6 +1362,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1348,6 +1390,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1375,6 +1418,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1402,6 +1446,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1429,6 +1474,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1456,6 +1502,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1485,6 +1532,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1513,6 +1561,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1540,6 +1589,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1567,6 +1617,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1594,6 +1645,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1621,6 +1673,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1648,6 +1701,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1681,6 +1735,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1710,6 +1765,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1737,6 +1793,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1764,6 +1821,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1791,6 +1849,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1818,6 +1877,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -1845,6 +1905,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1876,6 +1937,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1903,6 +1965,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1930,6 +1993,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1957,6 +2021,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -1984,6 +2049,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2011,6 +2077,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2039,6 +2106,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2067,6 +2135,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2095,6 +2164,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2126,6 +2196,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2152,6 +2223,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2180,6 +2252,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2207,6 +2280,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2234,6 +2308,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2261,6 +2336,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2288,6 +2364,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2315,6 +2392,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2325,14 +2403,14 @@ namespace TestInigmaIT
 
 
         /******************************* Tests for CandidatePassword ******************************/
-
-        public void CandidatePasswordUnacceptableCharactersOK()
+        public void CandidateConfirmPasswordNotSameOK()
         {
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
 
             //candidatePassword characters, numbers, spaces, commas and forward slashes only
-            candidatePassword = "%><?@()$.£!";
+            candidatePassword = "password1";
+            candidateConfirmPassword = "password2"; ;
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2346,6 +2424,34 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
+                                                    candidateSecurityAnswer,
+                                                    candidateDateRegistered);
+            //check they are not equal
+            Assert.AreNotEqual(error, "");
+        }
+        public void CandidatePasswordUnacceptableCharactersOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+
+            //candidatePassword characters, numbers, spaces, commas and forward slashes only
+            candidatePassword = "%><?@()$.£!";
+            candidateConfirmPassword = candidatePassword;
+
+            //assign test data for validation
+            error = aCandidate.CandidateValidation(candidateNo,
+                                                    candidateTitle,
+                                                    candidateFirstName,
+                                                    candidateLastName,
+                                                    candidateBirthDate,
+                                                    candidateAddress,
+                                                    candidatePostCode,
+                                                    candidatePhone,
+                                                    candidateEmail,
+                                                    candidateUsername,
+                                                    candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2358,6 +2464,7 @@ namespace TestInigmaIT
 
             //candidatePassword no spaces allowed
             candidatePassword = "Ali Al";
+            candidateConfirmPassword = candidatePassword;
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2371,6 +2478,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2386,6 +2494,7 @@ namespace TestInigmaIT
 
             //candidatePassword min - 1 (9 characters)
             candidatePassword = "AbcDefGh1";
+            candidateConfirmPassword = candidatePassword;
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2399,6 +2508,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2413,6 +2523,7 @@ namespace TestInigmaIT
 
             //candidatePassword min (10 characters)
             candidatePassword = "AbcDefGh12";
+            candidateConfirmPassword = candidatePassword;
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2426,6 +2537,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2439,7 +2551,8 @@ namespace TestInigmaIT
             clsCandidate aCandidate = new clsCandidate();
 
             //candidatePassword min + 1 (11 characters)
-            candidatePassword = "AbcDefGh123";
+            candidatePassword = "AbcDefGh12";
+            candidateConfirmPassword = candidatePassword;
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2453,6 +2566,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2466,7 +2580,8 @@ namespace TestInigmaIT
             clsCandidate aCandidate = new clsCandidate();
 
             //candidatePassword max - 1 (29 characters)
-            candidatePassword = candidateUsername.PadRight(29, 'a');
+            candidatePassword = candidatePassword.PadRight(29, 'a');
+            candidateConfirmPassword = candidatePassword;
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2480,6 +2595,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2494,6 +2610,7 @@ namespace TestInigmaIT
 
             //candidatePassword max (30 characters)
             candidatePassword = candidateUsername.PadRight(30, 'a');
+            candidateConfirmPassword = candidatePassword;
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2507,6 +2624,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2521,6 +2639,7 @@ namespace TestInigmaIT
 
             //candidatePassword max + 1 (31 characters)
             candidatePassword = candidateUsername.PadRight(31, 'a');
+            candidateConfirmPassword = candidatePassword;
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2534,6 +2653,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2567,6 +2687,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2594,6 +2715,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2622,6 +2744,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2636,7 +2759,7 @@ namespace TestInigmaIT
             clsCandidate aCandidate = new clsCandidate();
 
             //candidateSecurityAnswer min (10 characters, including space)
-            candidatePassword = "AbcDefGh12";
+            candidateSecurityAnswer = "AbcDefGh12";
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2650,6 +2773,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2663,7 +2787,7 @@ namespace TestInigmaIT
             clsCandidate aCandidate = new clsCandidate();
 
             //candidateSecurityAnswer min + 1 (11 characters, including space)
-            candidatePassword = "AbcDefGh123";
+            candidateSecurityAnswer = "AbcDefGh123";
 
             //assign test data for validation
             error = aCandidate.CandidateValidation(candidateNo,
@@ -2677,6 +2801,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2704,6 +2829,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2731,6 +2857,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2757,6 +2884,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2788,6 +2916,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2816,6 +2945,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal
@@ -2843,6 +2973,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2870,6 +3001,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2901,6 +3033,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2931,6 +3064,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are equal
@@ -2961,6 +3095,7 @@ namespace TestInigmaIT
                                                     candidateEmail,
                                                     candidateUsername,
                                                     candidatePassword,
+                                                    candidateConfirmPassword,
                                                     candidateSecurityAnswer,
                                                     candidateDateRegistered);
             //check they are not equal

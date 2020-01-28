@@ -157,13 +157,13 @@ namespace InigmaIT.PAGE {
         protected global::System.Web.UI.WebControls.TextBox txtCandidateHomePageCandidateEmail;
         
         /// <summary>
-        /// txtCandidateRegistrationCandidateUserName control.
+        /// txtCandidateRegistrationCandidateUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidateUserName;
+        protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidateUsername;
         
         /// <summary>
         /// txtCandidateHomePageCandidatePassword control.
@@ -173,6 +173,15 @@ namespace InigmaIT.PAGE {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCandidateHomePageCandidatePassword;
+        
+        /// <summary>
+        /// txtCandidateHomePageCandidateConfirmPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCandidateHomePageCandidateConfirmPassword;
         
         /// <summary>
         /// txtCandidateHomePageCandidateSecurityAnswer control.

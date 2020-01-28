@@ -60,11 +60,13 @@
                             <asp:TextBox ID="txtCandidateRegistrationCandidateUserName" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>Password:</td><td>
                             <asp:TextBox ID="txtCandidateRegistrationCandidatePassword" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
-                        <tr><td>Favourite Colour:</td><td>
+                        <tr><td>Confirm Password:</td><td>
+                            <asp:TextBox ID="txtCandidateRegistrationCandidateConfirmPassword" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
+                        <tr><td>Security Answer:</td><td>
                             <asp:TextBox ID="txtCandidateRegistrationCandidateSecurityAnswer" runat="server" Height="25px" Width="300px"></asp:TextBox></td></tr>
                         <tr><td>CV File:</td><td>
                             <asp:FileUpload ID="fileCandidateRegistrationCandidateCV" runat="server" Height="25px" Width="300px" /></td></tr>
-                        <tr><td>Date Registered:</td><td>
+                        <tr><td>Date:</td><td>
                             <asp:Label ID="lblCandidateRegistrationDateRegistered" runat="server" Height="25px" Width="300px"></asp:Label></td></tr>
                     </table>
             </div>

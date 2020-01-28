@@ -17,9 +17,10 @@ namespace InigmaITEmployment.HTML
             {
                 //put todays date in the textbox for registration date
                 lblCandidateRegistrationDateRegistered.Text = Convert.ToString(DateTime.Today.Day) + "/" + Convert.ToString(DateTime.Today.Month) + "/" + Convert.ToString(DateTime.Today.Year);
-            }  
-            
+            }
 
+            
+            lblCandidateRegistrationCandidateNo.Text = "0";
         }
 
 
@@ -96,17 +97,18 @@ namespace InigmaITEmployment.HTML
             clsCandidate aCandidate = new clsCandidate();
 
             //assign the data to the validation method. We have no candidateNo for new candidates so just use "1"
-            validationError = aCandidate.CandidateValidation("1", 
-                                                    txtCandidateRegistrationCandidateTitle.Text, 
-                                                    txtCandidateRegistrationCandidateFirstName.Text, 
-                                                    txtCandidateRegistrationCandidateLastName.Text, 
-                                                    txtCandidateRegistrationCandidateBirthDate.Text, 
-                                                    txtCandidateRegistrationCandidateAddress.Text, 
-                                                    txtCandidateRegistrationCandidatePostCode.Text, 
-                                                    txtCandidateRegistrationCandidatePhone.Text, 
-                                                    txtCandidateRegistrationCandidateEmail.Text, 
-                                                    txtCandidateRegistrationCandidateUserName.Text, 
-                                                    txtCandidateRegistrationCandidatePassword.Text, 
+            validationError = aCandidate.CandidateValidation("1",
+                                                    txtCandidateRegistrationCandidateTitle.Text,
+                                                    txtCandidateRegistrationCandidateFirstName.Text,
+                                                    txtCandidateRegistrationCandidateLastName.Text,
+                                                    txtCandidateRegistrationCandidateBirthDate.Text,
+                                                    txtCandidateRegistrationCandidateAddress.Text,
+                                                    txtCandidateRegistrationCandidatePostCode.Text,
+                                                    txtCandidateRegistrationCandidatePhone.Text,
+                                                    txtCandidateRegistrationCandidateEmail.Text,
+                                                    txtCandidateRegistrationCandidateUserName.Text,
+                                                    txtCandidateRegistrationCandidatePassword.Text,
+                                                    txtCandidateRegistrationCandidateConfirmPassword.Text,
                                                     txtCandidateRegistrationCandidateSecurityAnswer.Text, 
                                                     lblCandidateRegistrationDateRegistered.Text);
             //if there are no validation errors

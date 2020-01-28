@@ -8,9 +8,9 @@ namespace InigmaITClassLibrary
         {
         }
         //private member variable for CandidateNo
-        private string pmCandidateNo;
+        private Int32 pmCandidateNo;
         //public property funtion to access private member
-        public string CandidateNo
+        public Int32 CandidateNo
         {
             get
             {
@@ -73,9 +73,9 @@ namespace InigmaITClassLibrary
             }
         }
         //private member variable for CandidateBirthDate
-        private string pmCandidateBirthDate;
+        private DateTime pmCandidateBirthDate;
         //public property funtion
-        public string CandidateBirthDate
+        public DateTime CandidateBirthDate
         {
             get
             {
@@ -201,9 +201,9 @@ namespace InigmaITClassLibrary
             }
         }
         //private member variable for CandidateDateRegistered
-        private string pmCandidateDateRegistered;
+        private DateTime pmCandidateDateRegistered;
         //public property funtion
-        public string CandidateDateRegistered
+        public DateTime CandidateDateRegistered
         {
             get
             {
@@ -216,7 +216,22 @@ namespace InigmaITClassLibrary
                 pmCandidateDateRegistered = value;
             }
         }
-
+        //private member variable for CandidateAccountLock
+        private bool pmCandidateAccountLock;
+        //public property funtion
+        public bool CandidateAccountLock
+        {
+            get
+            {
+                //return the private member variable for CandidateAccountLock
+                return pmCandidateAccountLock;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateAccountLock = value;
+            }
+        }
         /************************* Candidate Details Validation Function *************************/
         public string CandidateValidation(string candidateNo, 
                                             string candidateTitle, 
@@ -228,7 +243,8 @@ namespace InigmaITClassLibrary
                                             string candidatePhone, 
                                             string candidateEmail,
                                             string candidateUsername,
-                                            string candidatePassword, 
+                                            string candidatePassword,
+                                            string candidateConfirmPassword,
                                             string candidateSecurityAnswer, 
                                             string candidateDateRegistered)
         {
@@ -479,6 +495,8 @@ namespace InigmaITClassLibrary
             //CandidatePassword NOT MORE THAN 30 LENGTH
             if (candidatePassword.Length > 30) { return "Candidate Password can not have more than 30 characters"; }
 
+            //the CandidatePassword MUST BE SAME AS CandidateConfirmPassword
+            if(candidateConfirmPassword != candidatePassword) { return "Candidate Password and Confirm Password must be the same"; }
 
 
             /////******************************* Tests for CandidateSecurityAnswer ******************************/

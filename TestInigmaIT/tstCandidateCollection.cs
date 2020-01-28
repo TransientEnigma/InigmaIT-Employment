@@ -23,15 +23,8 @@ namespace TestInigmaIT
         {
             //create an instance of the class
             clsCandidateCollection aCandidateCollection = new clsCandidateCollection();
-
-            //create some test data
-            Int32 aCount = 2;
-
-            //assign the data
-            aCandidateCollection.CandidateCount = aCount;
-
-            //test they are equal
-            Assert.AreEqual(aCandidateCollection.CandidateCount, aCount);
+            //test number of records and count are equal they are equal
+            Assert.AreEqual(aCandidateCollection.CandidateCount, aCandidateCollection.NumberOfRecords);
 
 
         }
@@ -49,11 +42,11 @@ namespace TestInigmaIT
             clsCandidate testCandidate = new clsCandidate();
 
             //add test candidate data
-            testCandidate.CandidateNo = "2430705";
+            testCandidate.CandidateNo = 2430705;
             testCandidate.CandidateTitle = "Mr";
             testCandidate.CandidateFirstName = "Janzeb";
             testCandidate.CandidateLastName = "Masiano";
-            testCandidate.CandidateBirthDate = "1988/01/14";
+            testCandidate.CandidateBirthDate = Convert.ToDateTime("1988/01/14");
             testCandidate.CandidateAddress = "212 De Montfort University, The Gateway, Leicester";
             testCandidate.CandidatePostCode = "LE1 9BH";
             testCandidate.CandidatePhone = "07816152348";
@@ -61,7 +54,7 @@ namespace TestInigmaIT
             testCandidate.CandidateUsername = "JMasiano1234";
             testCandidate.CandidatePassword = "An7th1n9G05";
             testCandidate.CandidateSecurityAnswer = "Is a secrete 1";
-            testCandidate.CandidateDateRegistered = "2020/01/14";
+            testCandidate.CandidateDateRegistered = Convert.ToDateTime("2020/01/14");
 
             //add the test candidate to the test list
             testCandidateList.Add(testCandidate);
@@ -88,11 +81,11 @@ namespace TestInigmaIT
             clsCandidate testCandidate = new clsCandidate();
 
             //add test candidate data
-            testCandidate.CandidateNo = "2430705";
+            testCandidate.CandidateNo = 2430705;
             testCandidate.CandidateTitle = "Mr";
             testCandidate.CandidateFirstName = "Janzeb";
             testCandidate.CandidateLastName = "Masiano";
-            testCandidate.CandidateBirthDate = "1988/01/14";
+            testCandidate.CandidateBirthDate = Convert.ToDateTime("1988/01/14");
             testCandidate.CandidateAddress = "212 De Montfort University, The Gateway, Leicester";
             testCandidate.CandidatePostCode = "LE1 9BH";
             testCandidate.CandidatePhone = "07816152348";
@@ -100,7 +93,7 @@ namespace TestInigmaIT
             testCandidate.CandidateUsername = "JMasiano1234";
             testCandidate.CandidatePassword = "An7th1n9G05";
             testCandidate.CandidateSecurityAnswer = "Is a secrete 1";
-            testCandidate.CandidateDateRegistered = "2020/01/14";
+            testCandidate.CandidateDateRegistered = Convert.ToDateTime("2020/01/14");
 
             //add the test candidate to the test list
             testCandidateList.Add(testCandidate);
@@ -124,11 +117,11 @@ namespace TestInigmaIT
             clsCandidate testCandidate = new clsCandidate();
 
             //add test candidate data
-            testCandidate.CandidateNo = "2430705";
+            testCandidate.CandidateNo = 2430705;
             testCandidate.CandidateTitle = "Mr";
             testCandidate.CandidateFirstName = "Janzeb";
             testCandidate.CandidateLastName = "Masiano";
-            testCandidate.CandidateBirthDate = "1988/01/14";
+            testCandidate.CandidateBirthDate = Convert.ToDateTime("1988/01/14");
             testCandidate.CandidateAddress = "212 De Montfort University, The Gateway, Leicester";
             testCandidate.CandidatePostCode = "LE1 9BH";
             testCandidate.CandidatePhone = "07816152348";
@@ -136,7 +129,7 @@ namespace TestInigmaIT
             testCandidate.CandidateUsername = "JMasiano1234";
             testCandidate.CandidatePassword = "An7th1n9G05";
             testCandidate.CandidateSecurityAnswer = "Is a secrete 1";
-            testCandidate.CandidateDateRegistered = "2020/01/14";
+            testCandidate.CandidateDateRegistered = Convert.ToDateTime("2020/01/14");
 
 
             //assign the data the the property

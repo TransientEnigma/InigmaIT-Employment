@@ -175,6 +175,15 @@ namespace InigmaITEmployment.HTML {
         protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidatePassword;
         
         /// <summary>
+        /// txtCandidateRegistrationCandidateConfirmPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCandidateRegistrationCandidateConfirmPassword;
+        
+        /// <summary>
         /// txtCandidateRegistrationCandidateSecurityAnswer control.
         /// </summary>
         /// <remarks>
