@@ -9,7 +9,7 @@ namespace InigmaITClassLibrary
     {
 
         //declare a dataconnection object by name
-        clsDataConnection databaseConnection;
+
 
         //private member variable for someCandidate
         private clsCandidate pmSomeCandidate;
@@ -41,7 +41,7 @@ namespace InigmaITClassLibrary
 
 
                 //dataconnection object by name is referenced, so connection is same as declared at top of page
-                databaseConnection = new clsDataConnection();
+                clsDataConnection databaseConnection =  new clsDataConnection();
 
 
                 //execute stored procedure to load the datatable with retrieved records
@@ -110,6 +110,10 @@ namespace InigmaITClassLibrary
                 //return the count property of the private list
                 return pmCandidateList.Count;
             }
+            set
+            {
+
+            }
         }
         //public property for the count
         public Int32 NumberOfRecords
@@ -118,6 +122,10 @@ namespace InigmaITClassLibrary
             {
                 //return the count property of the private list
                 return numberOfRecords;
+            }
+            set
+            {
+
             }
 
         }

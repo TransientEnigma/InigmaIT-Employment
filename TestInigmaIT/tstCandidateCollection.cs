@@ -30,7 +30,7 @@ namespace TestInigmaIT
         }
 
         [TestMethod]
-        public void CandidateListOK()
+        public void CandidateListOK() //NOTE: This fails when the connection string is not hard coded in clsDataConnection
         {
             //create an instance of the collection class
             clsCandidateCollection aCandidateCollection = new clsCandidateCollection();

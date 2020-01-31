@@ -5,12 +5,14 @@ using System.Web;
 using System.Data.SqlClient;
 using System.Data.OleDb;
 using System.Data;
+using System.Configuration;
+
 //using ClassControlLib; -> class lib 
 
 ///This class uses the ado.net sql classes to provide a connection to an Azure sql server database.
 ///it is free for use by anybody so long as you give credit to the original author i.e me
 ///Matthew Dean mjdean@dmu.ac.uk De Montfort University 2019
-//Azure connectionString = "Server=tcp:lightening.database.windows.net,1433;Initial Catalog=InigmaITEmployment;Persist Security Info=False;User ID=JMasiano;Password=(password);MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+
 
 public class clsDataConnection
 {
@@ -35,7 +37,9 @@ public class clsDataConnection
     private string GetConnectionString()
     {
         System.Net.WebClient client = new System.Net.WebClient();
-        string downloadString = @"Server = tcp:lightening.database.windows.net,1433; Initial Catalog = InigmaITEmployment; Persist Security Info = False; User ID = JMasiano; Password = ; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"; //client.DownloadString("http://localhost:5000/");
+        //added this line so that the connection can be established but also that the connection string can be hidden
+        //the configuration file containing string will not be uploaded to github since it is in the gitignore list
+        string downloadString = ConfigurationManager.AppSettings[@"ServerConnectionString"]; //was previously set to client.DownloadString("http://localhost:5000/");
         return downloadString;
     }
 
