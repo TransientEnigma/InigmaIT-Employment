@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Data.OleDb;
 using System.Data;
 using System.Configuration;
+using System.IO;
 
 //using ClassControlLib; -> class lib 
 
@@ -13,6 +14,12 @@ using System.Configuration;
 ///it is free for use by anybody so long as you give credit to the original author i.e me
 ///Matthew Dean mjdean@dmu.ac.uk De Montfort University 2019
 
+
+//This file has been modified by Janzeb Masiano. The file was originally intended for Azure connection only
+//I added code to use StreamReader to return a connection string stored in a text file on the desktop (this is more secure than hard coding the connection string)
+//I added try catch, so if no string is returned for Azure, the program will default to local database
+//I did not write the code in the catch statement, this was taken from the clsDataConnection class by Matthew Dean.
+//I added extra comments to help me understand the code
 
 public class clsDataConnection
 {
@@ -31,17 +38,52 @@ public class clsDataConnection
 
     public clsDataConnection()
     {
-        connectionString = GetConnectionString();
+        GetConnectionString(GetDBName());
     }
 
-    private string GetConnectionString()
+    public clsDataConnection(string DBLocation)
     {
-        System.Net.WebClient client = new System.Net.WebClient();
-        //added this line so that the connection can be established but also that the connection string can be hidden
-        //the configuration file containing string will not be uploaded to github since it is in the gitignore list
-        string downloadString = ConfigurationManager.AppSettings[@"ServerConnectionString"]; //was previously set to client.DownloadString("http://localhost:5000/");
-        return downloadString;
+        GetConnectionString(DBLocation);
     }
+
+
+    private string GetConnectionString(string SomePath)
+    {
+
+        //string to store connection string
+        connectionString = "";
+        //TRY TO CONNECT TO REMOTE AZURE DATABASE USING CONNECTION STRING SPECIFIED BY PATH FILE
+        try
+        {
+            // Open the text file using a stream reader.
+            using (StreamReader stringReader = new StreamReader(@"C:\Users\E-eng\Desktop\AzureConnectionString.txt"))
+            {
+
+                //Instantiate a StreamReader to read from the text file.
+                connectionString = stringReader.ReadToEnd();
+                //get rid of preceeding and following spaces
+
+                //return the connection string
+                return connectionString;
+            }
+
+        }
+        //REMOTE CONNECTION FAILS SO WILL TRY AND CONNECT TO LOCAL DB
+        catch
+        {
+            //build up the connection string for the sql server database Visual Studio 2010
+            //connectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=" + GetDBName() + ";Integrated Security=True;User Instance=True";
+            //build up the connection string for the sql server database Visual Studio 2012
+            //connectionString = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=" + GetDBName() + ";Integrated Security=True;Connect Timeout=30";
+            //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + GetDBName() + "\";Integrated Security=True;Connect Timeout=30";
+            connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"###\";Integrated Security=True;Connect Timeout=30";
+            //replaces the text ### for the DBPath
+            connectionString = connectionString.Replace("###", SomePath);
+            return connectionString;
+        }
+
+    }
+
 
     public string GetDBName()
     {
@@ -60,17 +102,19 @@ public class clsDataConnection
         string BaseDir = TrimPath(System.AppDomain.CurrentDomain.BaseDirectory);
         do
         {
-            //get the list of files in the folder
+            //get the list of files in the folder (BaseDir) this is the directory the visual studio resides
+            //(STEP 1) here we are simply getting the list of all the filepaths that are within that directory
             filePaths = System.IO.Directory.GetDirectories(BaseDir);
             PathArrayIndex = 0;
             while (PathArrayIndex < filePaths.Length & Found == false)
             {
                 //make path lowercase
                 filePaths[PathArrayIndex] = filePaths[PathArrayIndex].ToLower();
-                //if the file is not a system database file
+                //(STEP 2) make sure the file path contains the name app_data
+                //(STEP 3) if the filepath contains the app_data then 
                 if (filePaths[PathArrayIndex].Contains("app_data") == true)
                 {
-                    //get the list of files in the folder
+                    //(STEP 4) get the list of files in the app_data folder with extension .mdf
                     dirConts = System.IO.Directory.GetFiles(filePaths[PathArrayIndex], "*.mdf", System.IO.SearchOption.AllDirectories);
                     Counter = 0;
                     //while there are files to process
