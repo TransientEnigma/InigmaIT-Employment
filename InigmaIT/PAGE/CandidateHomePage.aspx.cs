@@ -12,7 +12,10 @@ namespace InigmaIT.PAGE
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ////create and instance of clsCandidateCollection to access the CandidateList data
+            //for security we hide the CandidateNo
+            lblCandidateHomePageCandidateNo.Visible = false;
+         
+            //create and instance of clsCandidateCollection to access the CandidateList data
             clsCandidateCollection retrievedCollection = new clsCandidateCollection();
 
             //integer to store the index for the candidatelist retrieved
@@ -31,7 +34,11 @@ namespace InigmaIT.PAGE
             //get the CandidatePostCode of the candidate in the list indexed by index
             txtCandidateRegistrationCandidatePostCode.Text = Convert.ToString(retrievedCollection.CandidateList[index].CandidatePostCode);
             //get the CandidateBirthDate of the candidate in the list indexed by index
-            txtCandidateHomePageCandidateBirthDate.Text = Convert.ToString(retrievedCollection.CandidateList[index].CandidateBirthDate);
+            txtCandidateHomePageCandidateBirthDate.Text = Convert.ToString(retrievedCollection.CandidateList[index].CandidateBirthDate.Day
+                                                                            + "/" 
+                                                                            + retrievedCollection.CandidateList[index].CandidateBirthDate.Month
+                                                                            + "/" 
+                                                                            + retrievedCollection.CandidateList[index].CandidateBirthDate.Year);
             //get the CandidatePhone of the candidate in the list indexed by index
             txtCandidateHomePageCandidatePhone.Text = Convert.ToString(retrievedCollection.CandidateList[index].CandidatePhone);
             //get the CandidateEmail of the candidate in the list indexed by index

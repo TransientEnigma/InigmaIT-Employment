@@ -8,13 +8,14 @@ namespace InigmaITClassLibrary
     public class clsCandidateCollection
     {
 
-        //declare a dataconnection object by name
+        //declare a dataconnection object by name (to use as reference object)
         clsDataConnection inigmaITConnection;
 
-        //private member variable for someCandidate
-        private clsCandidate pmSomeCandidate;
+        //create an instance of clsCandidate (pmSomeCandidate) and initialise the object.
+        //private member variable (object) for SomeCandidate
+        private clsCandidate pmSomeCandidate = new clsCandidate();
         //public property used to pass in and retrieve candidate data
-        public clsCandidate someCandidate
+        public clsCandidate SomeCandidate
         {
             get
             {
@@ -27,6 +28,8 @@ namespace InigmaITClassLibrary
                 pmSomeCandidate = value;
             }
         }
+
+
         //private member variable for NumberOfRecords
         private Int32 pmNumberOfRecords;
         //public property for the count
@@ -61,6 +64,57 @@ namespace InigmaITClassLibrary
             }
         }
 
+        /******************************* Add a Candidate *******************************************/
+        public Boolean AddCandidate()
+        {
+            //try to add the candidate
+            try
+            {
+                //reset the connection object (referenced as inigmaITConnection)
+                inigmaITConnection = new clsDataConnection();
+
+                //using some candidate to pass CandidateTitle value for @CandidateTitle parameter
+                inigmaITConnection.AddParameter("@CandidateTitle", SomeCandidate.CandidateTitle);
+                //using some candidate to pass CandidateFirstName value for @CandidateFirstName parameter
+                inigmaITConnection.AddParameter("@CandidateFirstName", SomeCandidate.CandidateFirstName);
+                //using some candidate to pass CandidateLastName value for @CandidateLastName parameter
+                inigmaITConnection.AddParameter("@CandidateLastName", SomeCandidate.CandidateLastName);
+                //using some candidate to pass CandidateBirthDate value for @CandidateBirthDate parameter
+                inigmaITConnection.AddParameter("@CandidateBirthDate", SomeCandidate.CandidateBirthDate);
+                //using some candidate to pass CandidateAddress value for @CandidateAddress parameter
+                inigmaITConnection.AddParameter("@CandidateAddress", SomeCandidate.CandidateAddress);
+                //using some candidate to pass CandidatePostCode value for @CandidatePostCode parameter
+                inigmaITConnection.AddParameter("@CandidatePostCode", SomeCandidate.CandidatePostCode);
+                //using some candidate to pass CandidatePhone value for @CandidatePhone parameter
+                inigmaITConnection.AddParameter("@CandidatePhone", SomeCandidate.CandidatePhone);
+                //using some candidate to pass CandidateEmail value for @CandidateEmail parameter
+                inigmaITConnection.AddParameter("@CandidateEmail", SomeCandidate.CandidateEmail);
+                //using some candidate to pass CandidateUsername value for @CandidateUsername parameter
+                inigmaITConnection.AddParameter("@CandidateUsername", SomeCandidate.CandidateUsername);
+                //using some candidate to pass CandidatePassword value for @CandidatePassword parameter
+                inigmaITConnection.AddParameter("@CandidatePassword", SomeCandidate.CandidatePassword);
+                //using some candidate to pass CandidateSecurityAnswer value for @CandidateSecurityAnswer parameter
+                inigmaITConnection.AddParameter("@CandidateSecurityAnswer", SomeCandidate.CandidateSecurityAnswer);
+                //using some candidate to pass CandidateCVFile value for @CandidateCVFile parameter
+                inigmaITConnection.AddParameter("@CandidateCVFile", SomeCandidate.CandidateCVFile);
+
+                //Execute the stored procedure to add the candidate details to the  tblCandidate in the database
+                inigmaITConnection.Execute("sproc_tblCandidate_AddCandidate");
+
+                //return true to report program stub completion
+                return true;
+            }
+            //if the candidate can not be added
+            catch
+            {
+                //return false to report a problem
+                return false;
+            }
+        }
+
+
+
+        /****************************** List Array Property ***************************************/
         //private data member for the CandidateList
         private List<clsCandidate> pmCandidateList = new List<clsCandidate>();
         //public property for the CandidateList
@@ -71,7 +125,7 @@ namespace InigmaITClassLibrary
 
 
 
-                //dataconnection object by name is referenced, so connection is same as declared at top of page
+                //dataconnection  name is object referenced, so connection is same as declared at top of page
                 inigmaITConnection =  new clsDataConnection();
 
                 //execute stored procedure to load the datatable with retrieved records

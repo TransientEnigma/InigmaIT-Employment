@@ -38,7 +38,7 @@
             <!-- START REGISTRATION FORM-->
             <div class="RegistrationTable" >
                     <table border="0">
-                        <tr><td>CandidateNo:</td><td>
+                        <tr><td>&nbsp;</td><td>
                             <asp:Label ID="lblCandidateRegistrationCandidateNo" runat="server" Height="25px" Width="300px"></asp:Label></td></tr>
                         <tr><td>Title:</td><td>
                             <asp:TextBox ID="txtCandidateRegistrationCandidateTitle" runat="server" Height="25px" Width="150px"></asp:TextBox></td></tr>

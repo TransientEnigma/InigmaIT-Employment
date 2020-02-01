@@ -12,8 +12,11 @@ namespace InigmaITEmployment.HTML
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //for security we hide the CandidateNo
+            lblCandidateRegistrationCandidateNo.Visible = false;
+
             //if the date registration date is blank then add a date
-            if(lblCandidateRegistrationDateRegistered.Text == "")
+            if (lblCandidateRegistrationDateRegistered.Text == "")
             {
                 //put todays date in the textbox for registration date
                 lblCandidateRegistrationDateRegistered.Text = Convert.ToString(DateTime.Today.Day) + "/" + Convert.ToString(DateTime.Today.Month) + "/" + Convert.ToString(DateTime.Today.Year);
@@ -91,8 +94,6 @@ namespace InigmaITEmployment.HTML
             //string to store the validation error
             string validationError = "";
             
-
-           
             //create instance of clsCandidate
             clsCandidate aCandidate = new clsCandidate();
 
@@ -114,28 +115,29 @@ namespace InigmaITEmployment.HTML
             //if there are no validation errors
             if(validationError == "")
             {
-                //register a new candidate (i.e. add the candidate to database)
-                Response.Redirect("CandidateSaveConfirmation.aspx");
+
                 //create an instance of clsCandidateCollection
-                //clsCandidateCollection newCandidate = new clsCandidateCollection
+                clsCandidateCollection theCandidateCollection = new clsCandidateCollection();
                 //pass in the data of someCandidate in the newCandidate object
-                //newCandidate.someCandidate.Title = txtCandidateRegistrationCandidateTitle.Text;
-                //newCandidate.someCandidate.CandidateFirstName = txtCandidateRegistrationCandidateFirstName.Text, 
-                //newCandidate.someCandidate.CandidateLastName = txtCandidateRegistrationCandidateLastName.Text, 
-                //newCandidate.someCandidate.CandidateBirthDate = txtCandidateRegistrationCandidateBirthDate.Text, 
-                //newCandidate.someCandidate.CandidateAddress = txtCandidateRegistrationCandidateAddress.Text, 
-                //newCandidate.someCandidate.CandidatePostCode = txtCandidateRegistrationCandidatePostCode.Text, 
-                //newCandidate.someCandidate.CandidatePhone = txtCandidateRegistrationCandidatePhone.Text, 
-                //newCandidate.someCandidate.CandidateEmail = txtCandidateRegistrationCandidateEmail.Text, 
-                //newCandidate.someCandidate.CandidateUserName = txtCandidateRegistrationCandidateUserName.Text, 
-                //newCandidate.someCandidate.CandidatePassword = txtCandidateRegistrationCandidatePassword.Text, 
-                //newCandidate.someCandidate.CandidateSecurityAnswer = txtCandidateRegistrationCandidateSecurityAnswer.Text, 
-                //newCandidate.someCandidate.CandidateDateRegistered = lblCandidateRegistrationDateRegistered.Text
+                theCandidateCollection.SomeCandidate.CandidateTitle = txtCandidateRegistrationCandidateTitle.Text;
+                theCandidateCollection.SomeCandidate.CandidateFirstName = txtCandidateRegistrationCandidateFirstName.Text;
+                theCandidateCollection.SomeCandidate.CandidateLastName = txtCandidateRegistrationCandidateLastName.Text;
+                theCandidateCollection.SomeCandidate.CandidateBirthDate = Convert.ToDateTime(txtCandidateRegistrationCandidateBirthDate.Text);
+                theCandidateCollection.SomeCandidate.CandidateAddress = txtCandidateRegistrationCandidateAddress.Text;
+                theCandidateCollection.SomeCandidate.CandidatePostCode = txtCandidateRegistrationCandidatePostCode.Text;
+                theCandidateCollection.SomeCandidate.CandidatePhone = txtCandidateRegistrationCandidatePhone.Text;
+                theCandidateCollection.SomeCandidate.CandidateEmail = txtCandidateRegistrationCandidateEmail.Text;
+                theCandidateCollection.SomeCandidate.CandidateUsername = txtCandidateRegistrationCandidateUserName.Text;
+                theCandidateCollection.SomeCandidate.CandidatePassword = txtCandidateRegistrationCandidatePassword.Text;
+                theCandidateCollection.SomeCandidate.CandidateSecurityAnswer = txtCandidateRegistrationCandidateSecurityAnswer.Text;
+                theCandidateCollection.SomeCandidate.CandidateCVFile = "no file path";
 
                 //execute the AddCandidate method, to add a new candidate to database
-                //newCandidate.AddCandidate();
-
-
+                if (theCandidateCollection.AddCandidate())
+                {
+                    //if the result of AddCandidate is true register 
+                    Response.Redirect("CandidateSaveConfirmation.aspx");
+                }
             }
             //if there is a validation error
             if (validationError != "")
