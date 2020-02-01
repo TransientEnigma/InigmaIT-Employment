@@ -56,7 +56,7 @@ public class clsDataConnection
         try
         {
             // Open the text file using a stream reader.
-            using (StreamReader stringReader = new StreamReader(@"C:\Users\E-eng\Desktop\AzureConnectionString.txt"))
+            using (StreamReader stringReader = new StreamReader(@"C:\Users\E-eng\Desktop\InigmaITConnectionString.txt"))
             {
 
                 //Instantiate a StreamReader to read from the text file.

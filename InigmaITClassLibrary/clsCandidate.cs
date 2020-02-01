@@ -200,6 +200,21 @@ namespace InigmaITClassLibrary
                 pmCandidateSecurityAnswer = value;
             }
         }
+        //private member variable for CandidateCVFile
+        private string pmCandidateCVFile;
+        public string CandidateCVFile
+        {
+            get
+            {
+                //return the private member variable for CandidateCVFile
+                return pmCandidateCVFile;
+            }
+            set
+            {
+                //assign the incomming value to the private member variable
+                pmCandidateCVFile = value;
+            }
+        }
         //private member variable for CandidateDateRegistered
         private DateTime pmCandidateDateRegistered;
         //public property funtion
@@ -232,6 +247,9 @@ namespace InigmaITClassLibrary
                 pmCandidateAccountLock = value;
             }
         }
+
+
+
         /************************* Candidate Details Validation Function *************************/
         public string CandidateValidation(string candidateNo, 
                                             string candidateTitle, 

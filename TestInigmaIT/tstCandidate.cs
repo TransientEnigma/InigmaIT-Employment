@@ -163,6 +163,18 @@ namespace TestInigmaIT
             Assert.AreEqual(aCandidate.CandidateSecurityAnswer, answer);
         }
         [TestMethod]
+        public void CandidateCVFileOK()
+        {
+            //create instance of clsCandidate
+            clsCandidate aCandidate = new clsCandidate();
+            //create test data
+            string answer = @"..\InigmaIT\CVFolder\MyCV";
+            //assign test data to property
+            aCandidate.CandidateCVFile = answer;
+            //check they are equal
+            Assert.AreEqual(aCandidate.CandidateCVFile, answer);
+        }
+        [TestMethod]
         public void CandidateDateRegisteredOK()
         {
             //create instance of clsCandidate

@@ -54,8 +54,9 @@ namespace TestInigmaIT
             testCandidate.CandidateUsername = "JMasiano1234";
             testCandidate.CandidatePassword = "An7th1n9G05";
             testCandidate.CandidateSecurityAnswer = "Is a secrete 1";
+            testCandidate.CandidateCVFile = @"..\InigmaIT\CVFolder\MyCV";
             testCandidate.CandidateDateRegistered = Convert.ToDateTime("2020/01/14");
-
+            testCandidate.CandidateAccountLock = false;
             //add the test candidate to the test list
             testCandidateList.Add(testCandidate);
 
@@ -93,7 +94,9 @@ namespace TestInigmaIT
             testCandidate.CandidateUsername = "JMasiano1234";
             testCandidate.CandidatePassword = "An7th1n9G05";
             testCandidate.CandidateSecurityAnswer = "Is a secrete 1";
+            testCandidate.CandidateCVFile = @"..\InigmaIT\CVFolder\MyCV";
             testCandidate.CandidateDateRegistered = Convert.ToDateTime("2020/01/14");
+            testCandidate.CandidateAccountLock = false;
 
             //add the test candidate to the test list
             testCandidateList.Add(testCandidate);
@@ -129,6 +132,7 @@ namespace TestInigmaIT
             testCandidate.CandidateUsername = "JMasiano1234";
             testCandidate.CandidatePassword = "An7th1n9G05";
             testCandidate.CandidateSecurityAnswer = "Is a secrete 1";
+            testCandidate.CandidateCVFile = @"..\InigmaIT\CVFolder\MyCV";
             testCandidate.CandidateDateRegistered = Convert.ToDateTime("2020/01/14");
 
 
