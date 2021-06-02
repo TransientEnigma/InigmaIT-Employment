@@ -1,1 +1,1 @@
-
+[2nd Year University] My Candidate component for my University Group Project for my Project Management and Development module.  InigmaIT Employment is an employment agency, used to store candidate data, and enables candidates to register and login. The ASPX pages were coded using C#, HTML and CSS and includes TDD. Can be made to connect to Azure SQL server database, using an external file as a source for the database connection string, or if that’s not available, it will default to a local database.
